@@ -1,0 +1,57 @@
+{
+    "version": "0.0.1",
+    "name": "nahid-ferdous/laravel-conversation",
+    "description": "Chat App",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "messenger",
+        "conversations",
+        "chat",
+        "php",
+        "pusher",
+        "realtime",
+        "real-time",
+        "chatify"
+    ],
+    "license": "MIT",
+    "require": {
+        "beyondcode/laravel-websockets": "^1.14",
+        "pusher/pusher-php-server": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nahidferdous\\Conversation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nahid ferdous",
+            "email": "nahidferdous240@gmail.com",
+            "homepage": "https://nahidferdous.netlify.app/",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nahidnfr123/laravel-conversation.git"
+        }
+    ],
+    "homepage": "https://github.com/nahidnfr123/laravel-conversation",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NahidFerdous\\Conversation\\ConversationServiceProvider"
+            ],
+            "aliases": {
+                "Conversation": "NahidFerdous\\Conversation\\Facades\\Conversation"
+            },
+            "dont-discover": [
+                "*"
+            ]
+        }
+    }
+}
